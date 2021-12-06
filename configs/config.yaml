@@ -1,0 +1,12 @@
+mode: debug                             # Development mode, debug, release, test
+addr: :9090                             # HTTP bind address
+name: lab-platform                      # the name of thr API Server
+url: http://127.0.0.1:9090              # The pingServer function requests the IP of the API server :port
+max_ping_count: 10                      # The number of times the pingServer function tries
+log:
+  level: debug
+  filename: log/qbus-manager.log        # Location of the log file
+  maxsize: 200                          # The maximum size of the log file in MB before cutting
+  max_age: 7                            # Maximum number of days to keep old files
+  max_backups: 10                       # Maximum number of old files to keep
+  buffer_size: 40960000
